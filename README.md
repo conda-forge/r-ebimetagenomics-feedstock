@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=ebimetagenomics
 
 Package license: LGPL-3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ebimetagenomics-feedstock/blob/master/LICENSE.txt)
 
 Summary: Functions for querying the EBI Metagenomics Portal <https://www.ebi.ac.uk/metagenomics/>. The current main focus is on taxa abundance data, but the intention is that this package should evolve into a general purpose package for working with EBI Metagenomics data using R. 
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-ebimetagenomics` from the `conda-forge` channel can be achieved by
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-ebimetagenomics` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
